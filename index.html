@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ...existing code... -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        .ruangguru-logo {
+            height: 40px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        .ruangguru-logo:hover {
+            transform: scale(1.05);
+        }
+        .logo-space {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">RuangGuru</div>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <!-- Logo Space -->
+                <div class="logo-space me-3">
+                    <!-- Logo RuangGuru -->
+                    <img src="./assets/images/Ruangguru_logo.svg" 
+                         alt="RuangGuru Logo" 
+                         style="height: 40px; width: auto;"
+                         class="ruangguru-logo">
+                </div>
+                <a class="navbar-brand" href="#">RuangGuru Mentee Story</a>
+            </div>
+            <!-- ...existing code... -->
+            <div class="d-flex align-items-center ms-3">
+                <!-- Dark Mode Toggle -->
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="darkModeSwitch" class="dark-mode-switch">
+                    <label for="darkModeSwitch" class="dark-mode-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section dengan Parallax -->
+    <section class="hero-section">
+        <div class="parallax-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">
+                        <span class="text-gradient">Mentee Story</span>
+                        <span class="highlight-text">RuangGuru</span>
+                    </h1>
+                    <p class="hero-subtitle">Bagikan pengalaman belajarmu dan inspire sesama learners</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="1000">0</h3>
+                            <p class="stat-label">Stories Shared</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="500">0</h3>
+                            <p class="stat-label">Active Mentees</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="95">0</h3>
+                            <p class="stat-label">Success Rate %</p>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#story-form" class="btn btn-primary btn-glow">
+                            <span>Share Your Story</span>
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#stories" class="btn btn-outline-light">
+                            <i class="fas fa-play-circle me-2"></i>
+                            <span>Watch Stories</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-card">
+                            <img src="https://via.placeholder.com/600x400" alt="Hero" class="img-fluid rounded-4">
+                            <div class="image-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>10K+ Graduates</span>
+                        </div>
+                        <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Mengapa Berbagi Cerita di RuangGuru?</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community Support</h4>
+                        <p>Bergabung dengan ribuan learner yang saling mendukung</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Recognition</h4>
+                        <p>Dapatkan apresiasi atas pencapaian belajarmu</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Inspire Others</h4>
+                        <p>Ceritamu bisa menjadi motivasi bagi learner lain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Form dengan Step Wizard -->
+    <section id="story-form" class="story-form-section py-5">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-progress">
+                    <div class="step active" data-step="1">
+                        <div class="step-icon">1</div>
+                        <span>Info Dasar</span>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-icon">2</div>
+                        <span>Detail Cerita</span>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-icon">3</div>
+                        <span>Review</span>
+                    </div>
+                </div>
+
+                <form id="menteeStoryForm" class="multi-step-form">
+                    <!-- Step 1 -->
+                    <div class="form-step active" data-step="1">
+                        <h3 class="step-title">Informasi Dasar</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Nama" required>
+                                    <label for="name">Nama Lengkap</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="course" required>
+                                        <option value="">Pilih Mata Pelajaran</option>
+                                        <option value="matematika">Matematika</option>
+                                        <option value="fisika">Fisika</option>
+                                        <option value="kimia">Kimia</option>
+                                        <option value="biologi">Biologi</option>
+                                        <option value="bahasa-inggris">Bahasa Inggris</option>
+                                    </select>
+                                    <label for="course">Mata Pelajaran</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" id="duration" placeholder="Durasi" required>
+                                    <label for="duration">Durasi Belajar (bulan)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="form-step" data-step="2">
+                        <h3 class="step-title">Detail Cerita</h3>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="rating-input">
+                                    <label>Rating Pengalaman</label>
+                                    <div class="star-rating">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="story" placeholder="Cerita" style="height: 150px" required></textarea>
+                                    <label for="story">Ceritakan Pengalamanmu</label>
+                                </div>
+                                <div class="char-counter">
+                                    <span id="charCount">0</span>/500 karakter
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Tag Cerita</label>
+                                <div class="tag-input">
+                                    <input type="text" class="form-control" placeholder="Tambah tag (tekan Enter)">
+                                    <div class="tags-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="form-step" data-step="3">
+                        <h3 class="step-title">Review & Submit</h3>
+                        <div class="review-container">
+                            <div class="review-item">
+                                <span class="review-label">Nama:</span>
+                                <span class="review-value" id="reviewName">-</span>
+                            </div>
+                            <div class="review-item">
+                                <span class="review-label">Email:</span>
+                                <span class="review-value" id="reviewEmail">-</span>
+                            </div>
+                            <div class="review-item">
+                                <span class="review-label">Mata Pelajaran:</span>
+                                <span class="review-value" id="reviewCourse">-</span>
+                            </div>
+                            <div class="review-item">
+                                <span class="review-label">Rating:</span>
+                                <span class="review-value" id="reviewRating">-</span>
+                            </div>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="agree" required>
+                            <label class="form-check-label" for="agree">
+                                Saya setuju cerita saya dipublikasikan
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">
+                            <i class="fas fa-arrow-left me-2"></i>Sebelumnya
+                        </button>
+                        <button type="button" class="btn btn-primary" id="nextBtn">
+                            Selanjutnya<i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                        <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">
+                            <i class="fas fa-check me-2"></i>Kirim Cerita
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Grid dengan Filter -->
+    <section id="stories" class="stories-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-badge">Stories</span>
+                <h2 class="section-title">Cerita Inspiratif Mentee</h2>
+            </div>
+            
+            <!-- Filter Bar -->
+            <div class="filter-bar mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="filter-chips">
+                            <button class="chip active" data-filter="all">Semua</button>
+                            <button class="chip" data-filter="matematika">Matematika</button>
+                            <button class="chip" data-filter="fisika">Fisika</button>
+                            <button class="chip" data-filter="kimia">Kimia</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="form-control" placeholder="Cari cerita...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="storiesGrid">
+                <!-- Stories akan dimuat di sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <div class="fab-menu">
+            <button class="fab-item" data-tooltip="Share">
+                <i class="fas fa-share-alt"></i>
+            </button>
+            <button class="fab-item" data-tooltip="Contact">
+                <i class="fas fa-envelope"></i>
+            </button>
+            <button class="fab-item" data-tooltip="Top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+        <button class="fab-main">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <!-- ...existing code... -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
