@@ -80,7 +80,7 @@ This application was built to solve real-world challenges faced by mentor assist
 ### Prerequisites
 - **Go**: Version 1.21 or higher
 - **Node.js**: Version 18.0 or higher
-- **MySQL**: Version 8.0 (XAMPP recommended for Windows)
+- **MySQL**: Version 8.0
 - **Git**: For version control
 
 ## 🚀 Installation
