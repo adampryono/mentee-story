@@ -10,12 +10,6 @@
     <img src="https://img.shields.io/badge/TailwindCSS-3.3-38B2AC?style=for-the-badge&logo=tailwind-css" alt="TailwindCSS">
   </p>
 
-  <p>
-    <img src="https://img.shields.io/badge/Status-Development-yellow?style=flat-square" alt="Status">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
-    <img src="https://img.shields.io/badge/Bootcamp-Ruangguru-orange?style=flat-square" alt="Bootcamp">
-    <img src="https://img.shields.io/badge/Type-Final_Project-blue?style=flat-square" alt="Project Type">
-  </p>
 </div>
 
 
